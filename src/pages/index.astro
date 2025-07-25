@@ -1,16 +1,241 @@
 ---
-
+import Layout from "../layouts/Layout.astro";
+import Alianzas from "../components/Alianzas.astro";
+import ValoresIglesia from "../components/ValoresIglesia.astro";
+import Vision from "../components/Vision.astro";
+import Testimonios from "../components/Testimonios.astro";
 ---
 
-<html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Astro</title>
-	</head>
-	<body>
-		<h1>Astro</h1>
-	</body>
-</html>
+<Layout title="Cada Hogar Kids – Un Programa Integrador">
+    <!-- PORTADA -->
+    <section
+        class="bg-cover bg-center h-screen flex flex-col justify-center items-center text-center px-4"
+        style="background-image: url('/img/Imagen1.jpg')"
+    >
+        <div
+            class="bg-white/80 p-8 rounded-xl shadow-xl max-w-3xl text-center space-y-6 opacity-0 translate-y-6 animate-fade-up"
+        >
+            <!-- Cita principal con menos colores -->
+            <p
+                class="text-2xl md:text-3xl font-semibold leading-relaxed text-blue-700"
+            >
+                “Queremos que <span class="text-pink-500">cada generación</span>
+                escuche y viva la Palabra de Dios,<br />
+                porque <span class="text-pink-500">Jesús ama</span> a los niños y
+                adolescentes...
+                <span class="text-lime-600">y nosotros también.</span>”
+            </p>
+
+            <!-- Lema en tres colores -->
+            <p class="text-3xl md:text-4xl font-bold tracking-wide">
+                <span class="text-sky-600">Ensancha</span>
+                <span class="text-yellow-500">Alumbra</span>
+                <span class="text-pink-500">Transforma</span>
+            </p>
+
+            <!-- Botón de acción -->
+            <a
+                href="#que-es"
+                class="inline-block bg-blue-600 text-white px-6 py-3 rounded-full hover:bg-blue-700 transition"
+            >
+                Conoce Cada Hogar Kids
+            </a>
+        </div>
+    </section>
+
+    <section class="my-16">
+        <Alianzas />
+    </section>
+
+    <!-- ¿Qué es Cada Hogar Kids? -->
+    <section id="que-es" class="py-16 px-6 bg-gray-50">
+        <div class="max-w-6xl mx-auto grid md:grid-cols-2 gap-8 items-center">
+            <div>
+                <h2 class="text-3xl font-bold mb-4 text-blue-900">
+                    ¿Qué es Cada Hogar Kids?
+                </h2>
+                <ul class="space-y-3 text-lg">
+                    <li>
+                        📍 <strong>Cristo en Cada Hogar Cuba:</strong> movilización
+                        evangelística (Iniciativa OIKOS).
+                    </li>
+                    <li>
+                        👶 <strong>Enfoque en la Niñez:</strong> siguiendo el ejemplo
+                        de Jesús (Marcos 10:14).
+                    </li>
+                    <li>
+                        🙏 <strong>Cultura de Oración:</strong> intercesión desde
+                        la infancia.
+                    </li>
+                    <li>
+                        🎯 <strong>Meta:</strong> formar niños que respondan al llamado
+                        de Jesús.
+                    </li>
+                </ul>
+                <p class="mt-4 italic text-green-700 font-semibold">
+                    “Niños que oran, viven y anuncian el Evangelio.”
+                </p>
+            </div>
+            <img
+                src="img/Imagen1.jpg"
+                alt="Niños orando"
+                class="rounded-lg shadow-lg"
+            />
+        </div>
+    </section>
+
+    <!-- Visión, Misión y Propósito -->
+    <Vision />
+
+    <!-- Valores para la Iglesia Cubana -->
+    <ValoresIglesia />
+
+    <!-- Recursos y Alianzas -->
+    <section class="py-16 px-6 bg-gray-50">
+        <div class="max-w-6xl mx-auto grid md:grid-cols-2 gap-12">
+            <div>
+                <h3 class="text-2xl font-bold text-blue-800 mb-4">
+                    📚 Recursos Adicionales
+                </h3>
+                <ul class="list-disc list-inside text-lg">
+                    <li>Mapa de oración (Every Home for Christ)</li>
+                    <li>Tratados y folletos (World Missionary Press)</li>
+                    <li>Materiales propios por temporadas</li>
+                </ul>
+            </div>
+            <div>
+                <h3 class="text-2xl font-bold text-blue-800 mb-4">
+                    🤝 Alianzas Estratégicas
+                </h3>
+                <ul class="list-disc list-inside text-lg">
+                    <li>Lifeway, OneHope, Living Waters</li>
+                    <li>Superlibro, Every Home, Revival Movement</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Calendario de Entrenamientos -->
+    <section class="py-16 px-6">
+        <div class="max-w-4xl mx-auto text-center">
+            <h2 class="text-3xl font-bold text-blue-900 mb-8">
+                📅 Calendario de Entrenamientos
+            </h2>
+            <div class="grid md:grid-cols-2 gap-6">
+                <div class="bg-white p-4 border rounded shadow">
+                    <h4 class="text-xl font-semibold">15 Agosto 2025</h4>
+                    <p>📍 La Habana - Coordinador: Fidel</p>
+                </div>
+                <div class="bg-white p-4 border rounded shadow">
+                    <h4 class="text-xl font-semibold">22 Agosto 2025</h4>
+                    <p>📍 Matanzas - Coordinador: Fidel</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Videos y Reportes -->
+    <section class="bg-blue-50 py-16 px-6">
+        <div class="max-w-6xl mx-auto">
+            <h2 class="text-3xl font-bold text-blue-900 mb-8 text-center">
+                🎥 Videos y Reportes
+            </h2>
+            <div class="grid md:grid-cols-2 gap-8">
+                <div class="bg-white p-6 rounded shadow">📑 /Reportes/</div>
+                <div class="bg-white p-6 rounded shadow">📽 /Videos/</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonios -->
+    <Testimonios />
+
+    <!-- Donaciones -->
+    <section class="bg-green-100 py-16 px-6 text-center">
+        <h2 class="text-3xl font-bold text-green-800 mb-4">
+            💵 Tu compromiso lleva la luz de Cristo a miles de niños cubanos
+        </h2>
+        <p class="text-lg mb-6">
+            Cada donación sostiene materiales, entrenamientos y campañas
+            nacionales de evangelismo infantil.
+        </p>
+        <a
+            href="#donar"
+            class="bg-green-600 text-white px-6 py-3 rounded-full hover:bg-green-700"
+            >Donar Ahora</a
+        >
+    </section>
+
+    <!-- Formulario de Contacto -->
+    <section class="py-16 px-6 bg-gray-50" id="contacto">
+        <div class="max-w-xl mx-auto">
+            <h2 class="text-3xl font-bold text-center text-blue-900 mb-8">
+                📝 Formulario de Contacto
+            </h2>
+            <form class="space-y-4">
+                <input
+                    type="text"
+                    placeholder="Nombre"
+                    class="w-full border rounded p-3"
+                    required
+                />
+                <input
+                    type="email"
+                    placeholder="Correo electrónico"
+                    class="w-full border rounded p-3"
+                    required
+                />
+                <textarea
+                    placeholder="Mensaje"
+                    rows="5"
+                    class="w-full border rounded p-3"
+                    required></textarea>
+                <button
+                    type="submit"
+                    class="bg-blue-600 text-white px-6 py-3 rounded-full hover:bg-blue-700"
+                    >Enviar</button
+                >
+            </form>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="bg-gray-900 text-white py-8 text-center">
+        <img
+            src="/logos/chk.svg"
+            alt="Logo"
+            class="mx-auto mb-4"
+            style="max-height: 60px;"
+        />
+        <p class="text-lg font-semibold mb-2">
+            Cada Hogar Kids – Ensancha, Alumbra, Transforma
+        </p>
+        <nav class="flex justify-center gap-6 mb-4">
+            <a href="#inicio" class="hover:underline">Inicio</a>
+            <a href="#que-es" class="hover:underline">Sobre Nosotros</a>
+            <a href="#donar" class="hover:underline">Donar</a>
+            <a href="#contacto" class="hover:underline">Contacto</a>
+        </nav>
+        <p class="text-sm italic">
+            “Dejad a los niños venir a mí...” (Marcos 10:14)
+        </p>
+    </footer>
+</Layout>
+
+<!-- Estilos animación -->
+<style>
+    @keyframes fadeUp {
+        from {
+            opacity: 0;
+            transform: translateY(24px);
+        }
+        to {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+    .animate-fade-up {
+        animation: fadeUp 1s ease-out forwards;
+        animation-delay: 0.3s;
+    }
+</style>

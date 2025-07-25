@@ -1,0 +1,56 @@
+---
+
+---
+
+<div class="overflow-hidden whitespace-nowrap bg-gray-300 rounded-2xl">
+    <div
+        class="animate-marquee-mobile md:animate-marquee flex w-max gap-10 py-2"
+    >
+        <!-- Repite tus logos aquí -->
+        <img src="/logos/EBV_flat_white.webp" alt="Logo 1" class="h-16" />
+        <img src="/logos/log-cbnlatino.png" alt="Logo 2" class="h-16" />
+        <img src="/logos/LOGO_ESPANHOL_CORES.png" alt="Logo 3" class="h-16" />
+        <img
+            src="/logos/logo-escuela-superlibro.png"
+            alt="Logo 4"
+            class="h-16"
+        />
+        <img
+            src="/logos/superlibro_logo_web_New2.png"
+            alt="Logo 5"
+            class="h-16"
+        />
+        <!-- Duplica la lista para efecto de repetición infinita -->
+        <img src="/logos/EBV_flat_white.webp" alt="Logo 1" class="h-16" />
+        <img src="/logos/log-cbnlatino.png" alt="Logo 2" class="h-16" />
+        <img src="/logos/LOGO_ESPANHOL_CORES.png" alt="Logo 3" class="h-16" />
+        <img
+            src="/logos/logo-escuela-superlibro.png"
+            alt="Logo 4"
+            class="h-16"
+        />
+        <img
+            src="/logos/superlibro_logo_web_New2.png"
+            alt="Logo 5"
+            class="h-16"
+        />
+    </div>
+</div>
+<style>
+    .animate-marquee {
+        animation: marquee 20s linear infinite;
+    }
+
+    .animate-marquee-mobile {
+        animation: marquee 20s linear infinite;
+    }
+
+    @keyframes marquee {
+        from {
+            transform: translateX(0);
+        }
+        to {
+            transform: translateX(-75%);
+        }
+    }
+</style>
