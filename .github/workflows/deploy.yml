@@ -9,38 +9,23 @@ permissions:
     pages: write
     id-token: write
 
-env:
-    # Forzar uso de Yarn 4
-    YARN_ENABLE_GLOBAL_CACHE: "false"
-
 jobs:
     build:
         runs-on: ubuntu-latest
         steps:
             - uses: actions/checkout@v4
 
-            - name: Setup Node.js
-              uses: actions/setup-node@v4
+            - uses: actions/setup-node@v4
               with:
                   node-version: 20
-                  cache: "yarn" # Habilitar cache de Yarn
 
-            - name: Setup Corepack
-              run: |
-                  corepack enable
-                  # Forzar Yarn 4 como gestor global
-                  corepack prepare yarn@stable --activate
-                  yarn set version stable
-
-            - name: Install dependencies
-              run: yarn install --immutable
-
-            - name: Build project
-              run: yarn build
+            - run: corepack enable
+            - run: yarn install --immutable
+            - run: yarn build
 
             - uses: actions/upload-pages-artifact@v3
               with:
-                  path: ./dist
+                  path: dist
 
     deploy:
         needs: build
