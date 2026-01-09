@@ -1,0 +1,14 @@
+stages:
+    - deploy
+
+deploy_production:
+    stage: deploy
+    tags: # Debe coincidir con el tag de tu runner
+        - Deploy
+    script:
+        - echo "=== Desplegando en el servidor ==="
+        - cd /home/homekids
+        - git pull origin main # Trae los cambios
+        - npm install # Instala dependencias
+        - npm run build # Construye el proyecto
+        - pm2 restart app || pm2 start npm --name "app" -- start # Reinicia la app

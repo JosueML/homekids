@@ -1,120 +1,203 @@
-<section class="py-16 px-6 bg-white overflow-hidden">
-    <h2 class="text-3xl font-bold text-center text-blue-900 mb-10">
-        Testimonios
-    </h2>
-
-    <div class="relative w-full overflow-hidden">
-        <!-- Contenedor animado -->
-        <div class="flex animate-scroll space-x-8 w-max">
-            <!-- Duplicamos los testimonios para efecto infinito -->
-            <!-- Testimonio -->
-            <div
-                class="relative inline-block bg-blue-100 rounded-3xl px-6 py-4 pr-20 min-w-[350px] shadow-md"
+<section class="py-16 px-4 sm:px-6 bg-linear-to-b from-gray-50 to-blue-50">
+    <div class="max-w-7xl mx-auto">
+        <div class="text-center mb-12">
+            <span
+                class="inline-block px-4 py-2 bg-blue-100 text-blue-800 rounded-full text-sm font-semibold mb-4"
             >
-                <div>
-                    <p class="text-blue-700 italic font-semibold">
-                        “<span class="font-bold">Cada Hogar Kids</span> es un poderoso
-                        equipo (...)”
-                    </p>
-                    <p class="text-blue-700 font-medium mt-2">
-                        Pastor Leónidas DaVinci
-                    </p>
-                </div>
-                <img
-                    src="/img/incognito.png"
-                    alt="Foto Pastor"
-                    class="absolute top-1/2 right-0 transform -translate-y-1/2 translate-x-1/4 w-20 h-20 rounded-full border-4 border-white shadow-lg"
-                />
+                Lo que dicen de nosotros
+            </span>
+            <h2 class="text-4xl font-bold text-blue-900 mb-4">
+                Testimonios Transformadores
+            </h2>
+            <div class="w-20 h-1.5 bg-blue-500 mx-auto rounded-full"></div>
+        </div>
+
+        <div class="relative overflow-hidden py-6">
+            <!-- Efectos de desvanecimiento laterales -->
+            <div
+                class="absolute inset-y-0 left-0 w-24 bg-linear-to-r from-gray-50 to-transparent z-10"
+            >
+            </div>
+            <div
+                class="absolute inset-y-0 right-0 w-24 bg-linear-to-l from-blue-50 to-transparent z-10"
+            >
             </div>
 
-            <div
-                class="relative inline-block bg-green-100 rounded-3xl px-6 py-4 pr-20 min-w-[350px] shadow-md"
-            >
-                <div>
-                    <p class="text-green-700 italic font-semibold">
-                        “Gloria a Dios por CHK, qué bendición (...)”
-                    </p>
-                    <p class="text-green-700 font-medium mt-2">
-                        Pastor Rigoberto de Marianao
-                    </p>
+            <!-- Carrusel de testimonios -->
+            <div class="flex animate-scroll gap-8 w-max">
+                <!-- Testimonio 1 -->
+                <div
+                    class="relative shrink-0 w-80 md:w-96 bg-white rounded-2xl p-6 shadow-lg hover:shadow-xl transition-shadow duration-300"
+                >
+                    <div
+                        class="absolute -top-6 -left-6 w-16 h-16 rounded-full overflow-hidden border-4 border-white shadow-md"
+                    >
+                        <img
+                            src="/img/incognito.png"
+                            alt="Pastor Leónidas DaVinci"
+                            class="w-full h-full object-cover"
+                        />
+                    </div>
+                    <div class="ml-8">
+                        <blockquote
+                            class="text-gray-700 italic text-lg leading-relaxed"
+                        >
+                            “<span class="font-bold text-blue-600"
+                                >Cada Hogar Kids</span
+                            > es un poderoso equipo que está transformando la niñez
+                            en Cuba.”
+                        </blockquote>
+                        <div class="mt-4 flex items-center">
+                            <div class="h-px bg-blue-200 flex-1"></div>
+                            <p class="ml-4 text-blue-800 font-semibold">
+                                Pastor Leónidas DaVinci
+                            </p>
+                        </div>
+                    </div>
                 </div>
-                <img
-                    src="/img/incognito.png"
-                    alt="Foto Pastor"
-                    class="absolute top-1/2 right-0 transform -translate-y-1/2 translate-x-1/4 w-20 h-20 rounded-full border-4 border-white shadow-lg"
-                />
-            </div>
 
-            <div
-                class="relative inline-block bg-pink-100 rounded-3xl px-6 py-4 pr-20 min-w-[350px] shadow-md"
-            >
-                <div>
-                    <p class="text-pink-700 italic font-semibold">
-                        “Impactando generaciones para Cristo (...)”
-                    </p>
-                    <p class="text-pink-700 font-medium mt-2">
-                        Pastora Miriam Pérez
-                    </p>
+                <!-- Testimonio 2 -->
+                <div
+                    class="relative shrink-0 w-80 md:w-96 bg-white rounded-2xl p-6 shadow-lg hover:shadow-xl transition-shadow duration-300"
+                >
+                    <div
+                        class="absolute -top-6 -left-6 w-16 h-16 rounded-full overflow-hidden border-4 border-white shadow-md"
+                    >
+                        <img
+                            src="/img/incognito.png"
+                            alt="Pastor Rigoberto"
+                            class="w-full h-full object-cover"
+                        />
+                    </div>
+                    <div class="ml-8">
+                        <blockquote
+                            class="text-gray-700 italic text-lg leading-relaxed"
+                        >
+                            “Gloria a Dios por CHK, qué bendición para nuestras
+                            iglesias y niños.”
+                        </blockquote>
+                        <div class="mt-4 flex items-center">
+                            <div class="h-px bg-green-200 flex-1"></div>
+                            <p class="ml-4 text-green-800 font-semibold">
+                                Pastor Rigoberto de Marianao
+                            </p>
+                        </div>
+                    </div>
                 </div>
-                <img
-                    src="/img/incognito.png"
-                    alt="Foto Pastor"
-                    class="absolute top-1/2 right-0 transform -translate-y-1/2 translate-x-1/4 w-20 h-20 rounded-full border-4 border-white shadow-lg"
-                />
-            </div>
 
-            <!-- Copias para loop -->
-            <div
-                class="relative inline-block bg-blue-100 rounded-3xl px-6 py-4 pr-20 min-w-[350px] shadow-md"
-            >
-                <div>
-                    <p class="text-blue-700 italic font-semibold">
-                        “<span class="font-bold">Cada Hogar Kids</span> es un poderoso
-                        equipo (...)”
-                    </p>
-                    <p class="text-blue-700 font-medium mt-2">
-                        Pastor Leónidas DaVinci
-                    </p>
+                <!-- Testimonio 3 -->
+                <div
+                    class="relative shrink-0 w-80 md:w-96 bg-white rounded-2xl p-6 shadow-lg hover:shadow-xl transition-shadow duration-300"
+                >
+                    <div
+                        class="absolute -top-6 -left-6 w-16 h-16 rounded-full overflow-hidden border-4 border-white shadow-md"
+                    >
+                        <img
+                            src="/img/incognito.png"
+                            alt="Pastora Miriam Pérez"
+                            class="w-full h-full object-cover"
+                        />
+                    </div>
+                    <div class="ml-8">
+                        <blockquote
+                            class="text-gray-700 italic text-lg leading-relaxed"
+                        >
+                            “Impactando generaciones para Cristo con
+                            herramientas innovadoras.”
+                        </blockquote>
+                        <div class="mt-4 flex items-center">
+                            <div class="h-px bg-pink-200 flex-1"></div>
+                            <p class="ml-4 text-pink-800 font-semibold">
+                                Pastora Miriam Pérez
+                            </p>
+                        </div>
+                    </div>
                 </div>
-                <img
-                    src="/img/incognito.png"
-                    alt="Foto Pastor"
-                    class="absolute top-1/2 right-0 transform -translate-y-1/2 translate-x-1/4 w-20 h-20 rounded-full border-4 border-white shadow-lg"
-                />
-            </div>
 
-            <div
-                class="relative inline-block bg-green-100 rounded-3xl px-6 py-4 pr-20 min-w-[350px] shadow-md"
-            >
-                <div>
-                    <p class="text-green-700 italic font-semibold">
-                        “Gloria a Dios por CHK, qué bendición (...)”
-                    </p>
-                    <p class="text-green-700 font-medium mt-2">
-                        Pastor Rigoberto de Marianao
-                    </p>
+                <!-- Duplicados para efecto infinito -->
+                <!-- Testimonio 1 (copia) -->
+                <div
+                    class="relative shrink-0 w-80 md:w-96 bg-white rounded-2xl p-6 shadow-lg hover:shadow-xl transition-shadow duration-300"
+                >
+                    <div
+                        class="absolute -top-6 -left-6 w-16 h-16 rounded-full overflow-hidden border-4 border-white shadow-md"
+                    >
+                        <img
+                            src="/img/incognito.png"
+                            alt="Pastor Leónidas DaVinci"
+                            class="w-full h-full object-cover"
+                        />
+                    </div>
+                    <div class="ml-8">
+                        <blockquote
+                            class="text-gray-700 italic text-lg leading-relaxed"
+                        >
+                            “<span class="font-bold text-blue-600"
+                                >Cada Hogar Kids</span
+                            > es un poderoso equipo que está transformando la niñez
+                            en Cuba.”
+                        </blockquote>
+                        <div class="mt-4 flex items-center">
+                            <div class="h-px bg-blue-200 flex-1"></div>
+                            <p class="ml-4 text-blue-800 font-semibold">
+                                Pastor Leónidas DaVinci
+                            </p>
+                        </div>
+                    </div>
                 </div>
-                <img
-                    src="/img/incognito.png"
-                    alt="Foto Pastor"
-                    class="absolute top-1/2 right-0 transform -translate-y-1/2 translate-x-1/4 w-20 h-20 rounded-full border-4 border-white shadow-lg"
-                />
+
+                <!-- Testimonio 2 (copia) -->
+                <div
+                    class="relative shrink-0 w-80 md:w-96 bg-white rounded-2xl p-6 shadow-lg hover:shadow-xl transition-shadow duration-300"
+                >
+                    <div
+                        class="absolute -top-6 -left-6 w-16 h-16 rounded-full overflow-hidden border-4 border-white shadow-md"
+                    >
+                        <img
+                            src="/img/incognito.png"
+                            alt="Pastor Rigoberto"
+                            class="w-full h-full object-cover"
+                        />
+                    </div>
+                    <div class="ml-8">
+                        <blockquote
+                            class="text-gray-700 italic text-lg leading-relaxed"
+                        >
+                            “Gloria a Dios por CHK, qué bendición para nuestras
+                            iglesias y niños.”
+                        </blockquote>
+                        <div class="mt-4 flex items-center">
+                            <div class="h-px bg-green-200 flex-1"></div>
+                            <p class="ml-4 text-green-800 font-semibold">
+                                Pastor Rigoberto de Marianao
+                            </p>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
 </section>
 
 <style>
-    /* Animación infinita */
+    /* Animación mejorada */
     @keyframes scroll {
         0% {
             transform: translateX(0);
         }
         100% {
-            transform: translateX(-50%);
+            transform: translateX(calc(-50% - 1rem));
         }
     }
     .animate-scroll {
-        animation: scroll 30s linear infinite;
+        animation: scroll 25s linear infinite;
+        display: flex;
+        gap: 2rem;
+    }
+
+    @media (max-width: 768px) {
+        .animate-scroll {
+            animation: scroll 15s linear infinite;
+        }
     }
 </style>
