@@ -2,6 +2,8 @@
 
 Sitio web desarrollado con Astro y Tailwind CSS como parte de un proyecto real para el ministerio Cristo en Cada Hogar – Cuba (iniciativa Cada Hogar Kids). Esta versión se publica en GitHub Pages exclusivamente como demostración técnica dentro de mi portafolio.
 
+🌐 **Demo en vivo:** [https://josueml.github.io/homekids/](https://josueml.github.io/homekids/)
+
 ## 🔧 Stack técnico
 
 -   **Astro 5** (SSG-first)
