@@ -1,47 +1,53 @@
-# Astro Starter Kit: Minimal
+# HomeKids – Astro Project
 
-```sh
-npm create astro@latest -- --template minimal
+Sitio web desarrollado con Astro y Tailwind CSS como parte de un proyecto real para el ministerio Cristo en Cada Hogar – Cuba (iniciativa Cada Hogar Kids). Esta versión se publica en GitHub Pages exclusivamente como demostración técnica dentro de mi portafolio.
+
+## 🔧 Stack técnico
+
+-   **Astro 5** (SSG-first)
+-   **Tailwind CSS**
+-   **Vite**
+-   **Yarn** (v4)
+
+## ✨ Features técnicas
+
+-   **SSG (Static Site Generation)** con Astro
+-   Alto rendimiento (HTML estático, mínimo JS)
+-   SEO-friendly (estructura semántica, carga rápida)
+-   Arquitectura modular de componentes
+-   Estilos utilitarios con Tailwind
+-   Build optimizado para despliegue estático (GitHub Pages)
+
+## 🚀 Uso local
+
+```bash
+# Instalar dependencias
+yarn install
+
+# Iniciar servidor de desarrollo
+yarn dev
 ```
 
-[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/withastro/astro/tree/latest/examples/minimal)
-[![Open with CodeSandbox](https://assets.codesandbox.io/github/button-edit-lime.svg)](https://codesandbox.io/p/sandbox/github/withastro/astro/tree/latest/examples/minimal)
-[![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/withastro/astro?devcontainer_path=.devcontainer/minimal/devcontainer.json)
+El proyecto estará disponible en `http://localhost:4321`
 
-> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
+## 📦 Build para producción
 
-## 🚀 Project Structure
-
-Inside of your Astro project, you'll see the following folders and files:
-
-```text
-/
-├── public/
-├── src/
-│   └── pages/
-│       └── index.astro
-└── package.json
+```bash
+yarn build
 ```
 
-Astro looks for `.astro` or `.md` files in the `src/pages/` directory. Each page is exposed as a route based on its file name.
+Los archivos estáticos se generarán en el directorio `dist/`
 
-There's nothing special about `src/components/`, but that's where we like to put any Astro/React/Vue/Svelte/Preact components.
+## 🧩 Contexto profesional
 
-Any static assets, like images, can be placed in the `public/` directory.
+-   Proyecto real desarrollado para un cliente / ministerio
+-   Adaptado para publicación pública como portafolio
+-   Enfoque en rendimiento, simplicidad y buenas prácticas
 
-## 🧞 Commands
+## 📄 Nota
 
-All commands are run from the root of the project, from a terminal:
+El despliegue en GitHub Pages no corresponde al entorno original de producción del cliente.
 
-| Command                   | Action                                           |
-| :------------------------ | :----------------------------------------------- |
-| `npm install`             | Installs dependencies                            |
-| `npm run dev`             | Starts local dev server at `localhost:4321`      |
-| `npm run build`           | Build your production site to `./dist/`          |
-| `npm run preview`         | Preview your build locally, before deploying     |
-| `npm run astro ...`       | Run CLI commands like `astro add`, `astro check` |
-| `npm run astro -- --help` | Get help using the Astro CLI                     |
+---
 
-## 👀 Want to learn more?
-
-Feel free to check [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).
+**Licencia**: Este proyecto es una demostración con fines de portafolio
