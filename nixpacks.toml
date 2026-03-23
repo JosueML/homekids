@@ -1,5 +1,5 @@
 [phases.setup]
-nixPkgs = ["nodejs_22", "yarn"]
+nixPkgs = ["nodejs_22", "yarn", "caddy"]
 
 [phases.install]
 cmds = [
@@ -11,3 +11,6 @@ cacheDirectories = [".yarn/cache"]
 
 [phases.build]
 cmds = ["yarn build"]
+
+[start]
+cmd = "caddy file-server --root /app/dist --listen :80"
